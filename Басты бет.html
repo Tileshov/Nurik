@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тыңда</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .sidebar {
+            float: left;
+            width: 20%;
+            padding: 10px;
+        }
+        .sidebar h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .sidebar p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Тыңда</h1>
+    </header>
+    <nav>
+        <a href="Басты бет.html">Басты бет</a>
+        <a href="Саясат.html">Саясат</a>
+        <a href="Экономика.html">Экономика</a>
+        <a href="Спорт.html">Спорт</a>
+        <a href="Мадениет.html">Мәдениет</a>
+    </nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жаңалықтар</title>
+    <style>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #logo {
+            position: relative; 
+            transition: transform 0.3s ease-in-out; 
+        }
+
+        header h1,
+        header p {
+            margin-bottom: 10px;
+        }
+        .zoom {
+            transform: scale(1.2); \
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\user\Downloads\photo1715280353.jpeg"width="700" height="500">
+        
+        
+        <h1>Жаңалықтар</h1>
+        <p>Сапалы жаңалықтар тек бізде!</p>
+    </header>
+
+    <script>
+        function zoomIn(event) {
+            const x = event.clientX;
+            const y = event.clientY;
+            document.getElementById("logo").style.transform = "scale(1.2)";
+            const logo = document.getElementById("logo");
+            const logoWidth = logo.offsetWidth;
+            const logoHeight = logo.offsetHeight;
+
+            const centerX = logoWidth;
+            const centerY = logoHeight;
+
+            const offsetX = x - centerX;
+            const offsetY = y - centerY;
+
+            logo.style.left = `${offsetX}px`;
+            logo.style.top = `${offsetY}px`;
+        }
+
+        function zoomOut() {
+            document.getElementById("logo").style.transform = "scale(1)";
+
+            document.getElementById("logo").style.left = "0";
+            document.getElementById("logo").style.top = "0";
+        }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валюталар курсы</title>
+</head>
+<body>
+    <h1>Бүгінгі курс қандай</h1>
+    <p>1 USD = <span id="usdRate"></span> 434.5 KZT</p>
+    <p>1 EUR = <span id="eurRate"></span> 515.3 KZT</p>
+    <p>1 RUB = <span id="rubRate"></span> 5.85 KZT</p>
+    <script>
+        const usdToKzt = 434.5; 
+        const eurToKzt = 515.3; 
+        const rubToKzt = 5.85;  
+
+        document.getElementById("usdRate").innerText = usdToKzt.toFixed(2);
+        document.getElementById("eurRate").innerText = eurToKzt.toFixed(2);
+        document.getElementById("rubRate").innerText = rubToKzt.toFixed(2);
+    </script>
+</body>
+</html>
+
+    
+    <title>Жаңалықтар</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Жаңалықтар</h2>
+            <a href="Президент.html"><img src="https://storage.yvision.kz/images/user/441175/c901944b88e0a75a70364e56d9ed26.jpg"width="1000"></a>
+            <p>ҚР ҚК Президенті – Жоғарғы Бас қолбасшысы Қасым-Жомарт Тоқаев Астанада Ұлттық ұланның авиациялық базасын ашу рәсіміне қатысты, деп хабарлайды kazinform агенттігі.<BR> </BR>Мемлекет басшысы іс-шараға қатысушыларды келе жатқан Отан қорғаушылар күнімен құттықтады.Ол бұл патриоттық сезімдерді оятатын және жауынгерлік рухты көтеретін айтулы мереке, ал Қазақстанның Қарулы күштері — біздің егемен еліміздің мүдделерінің сенімді қалқаны, бейбітшілік пен тұрақтылықтың мызғымас тірегі екенін атап өтті.
+- Авиациялық базаның ашылуы-Ұлттық ұлан үшін ғана емес, бүкіл армиямыз үшін маңызды оқиға. Авиабаза күш құрылымдарының әлеуетін едәуір арттыруға және авиацияның жедел ұшуы үшін мүмкіндіктерді қамтамасыз етуге мүмкіндік береді. Мемлекет Қарулы Күштерді жарақтандыруға және әскери инфрақұрылымды дамытуға ерекше көңіл бөледі,-деді Қасым-Жомарт Тоқаев.
+
+Президент еліміздегі бұрын-соңды болмаған су тасқыны кезінде әскери қызметшілер майданда болғанын, сол арқылы әскери қызметшілердің</p>
+        </section>
+
+<section>
+            <h3>Сауыт жасайтын қолөнерші. Батырлардың киіміне Қазақстанда кімдер құмар</h3>
+            <a href="Сауыт.html"><img src="https://i.pinimg.com/736x/ee/9f/3f/ee9f3f512f6883ae7f13638c9be79121.jpg"width="1000"></a>
+        </section>
+
+<sectoin>
+            <h3>Әйелге күш көрсету ғана емес: Бишімбаев соты бетін ашқан бес мәселе</h3>
+            <a href=Бишимбаев.html><img src="https://informburo.kz/storage/photos/84/main/I2peUT8jY4HJ3Cs7lFtd2SRMh6pLcuPY53rKRYSC.jpg"width="1000"></a>
+            <p><EM> 
+    Өзінің жұбайы Салтанат Нүкенованы өлтірді деп айыпталып отырған экс-министр Қуандық Бишімбаевтың соты басталғанына екі айға жуықтады.<BR></BR>
+    Бұл алқабилер қатысып, ашық режимде өтіп жатқан резонанс сотқа айналып отыр.Қазір сот процесі жарыссөз кезеңіне дейін жетті. Сотқа қазақстандық аудитория ғана емес, әлемнің көптеген елдері (әсіресе, ТМД елдерінің тұрғындары) көз тігіп отыр.
+            <BR></BR>
+Бишімбаев бүгінде Қазнеттегі нөмірі бірінші тақырыпқа айналды. Оның айналасында хейт те, даурықпа әңгіме де, талқы да көп. Ашық сот отырысы, әсіресе, әлеуметтік желіде қызу талқыланып жатыр. Көрермендер арасында бұл сотты "сериалға" теңеп жатқандар да жетерлі.
+            <BR></BR>
+    Осы резонанс оқиға көптеген жайдың бетін ашты. Informburo.kz тілшісі Нүкенованың өлімі мен сот отырысының төңірегінде болып жатқан жайттарды саралап көрді.
+            </EM></p>
+</sectoin>
+
+<section>
+    <h2>БҚО-да су басқан аумақтарда сынамалар алынып, дезинфекциялау жұмыстары жүргізіліп жатыр</h2>
+    <img src="https://img.inform.kz/kazinform-photobank/media/2024-04-02/9b5a3a11-dbb2-48d3-8cf5-ab40e81ed2a4.webp"width="1000">
+    <P>
+        <EM>
+            ОРАЛ. KAZINFORM – Батыс Қазақстан облысында су  тасқыны басталғаннан бері орталықтандырылған және орталықтандырылмаған сумен жабдықтау жүйесінен барлығы 1 489 ауыз су сынамасы алынды. <BR></BR>
+            БҚО санитариялық-эпидемиологиялық бақылау департаментінің басшысы Мұхамғали Арыспаевтың өңірлік коммуникациялар қызметі алаңында өткен брифингіде мәлім еткеніндей, соның ішінде микробиологиялық зерттеуге 749 сынама алынып, одан 33 сәйкессіздік (4,4 пайызы) анықталды. <BR></BR>
+            Мұхамғали Қайыржанұлының сөзіне қарағанда, сонымен қатар санитарлық-химиялық зерттеуге алынған 740 сынаманың 41-інен (5,5 пайызы) сәйкессіздік анықталып отыр. Мұның басым бөлігі судың кермектілігі мен лайлылығы бойынша сәйкес келмеді.
+            <BR></BR>
+        </EM>
+    </P>
+</section>
+
+<section>
+    <h2>Батыс Қазақстанда су тасқыны жағдайы тұрақталып келеді</h2>
+    <img src = "https://sputnik.kz/img/07e8/04/0f/43669990_0:63:1280:783_1920x0_80_0_0_a9ab46ec74f2a645a93b89b4b3893a6b.jpg.webp"width="1000">
+</section>
+
+
+<section>
+    <H2>Оңтүстіктің қырыққабаты Беларуське экспорттала бастады</H2>
+    <img src="https://sputnik.kz/img/1398/87/13988788_164:0:1182:576_600x0_80_0_0_22ec91cee874fee1a85bd91f107677d2.jpg.webp"width="1000">
+    <P>
+        <EM>
+            Жуырда ғана Түркістан облысының диқандары 250 мың тонна қырыққабат өсіріп, дайындағанымен оны сата алмай отырғандарын айтып дабыл қаққан болатын.<BR></BR>
+            Бүгінде өңірдегі дайын өнімдерді экспортқа шығаруға қатысты кедергілер мен тосқауылдар алынып тасталды. Диқандар 500 тонна қырыққабатты Беларуське сату бойынша келісім жасап, алғашқы 200 тонна өнім тиелген жүк көліктері жолға шықты, деп хабарлады Түркістан облыстық өңірлік коммуникация қызметі.<BR></BR>
+            Жүк көліктеріне тиелген қырыққабат араға 5 күн салып Беларуське жетеді деп жоспарланған. Ол жақтағы қоймаға түскен қазақстандық өнімді саудагерлер өзге қалаларға жөнелтеді.<BR></BR>
+            Түркістандық шаруалардың бірі Амантай Сарыбаев көкөніс тиейтін техника мен жұмысшыларға төленетін жалақыны есептегенде әр гектарға кететін шығын 1 миллион теңгені құрайтынын айтады.<BR></BR>
+            <img src="https://sputnik.kz/img/1398/87/13988722_0:0:1280:576_600x0_80_0_0_5101ee5607d8a51a397c9377e58e96b3.jpg.webp" width="1000"><BR></BR>
+            Жалпы биылғы жылы Түркістан облысында 300 мың тонна қырыққабат өндіру жоспарланған болса, оның 250 мың тоннасы экспортталады. Ал қалған 50 мың тоннасы ішкі нарықта саудаланады.
+        </EM>
+    </P>
+</section>
+
+
+
+<section>
+    <H2>Солтүстік Қазақстан облысында заңсыз аңшылықпен айналысқан қылмыстық топ сотталды</H2>
+    <img src = "https://sputnik.kz/img/07e4/09/1c/15071034_0:0:1200:800_1440x900_80_0_1_f8ec83b2df25709f79b40eb78f4a584b.jpg.webp?source-sid=Sputnik%20kz_photo88"width="1000"> 
+    <p>
+        <EM>
+            Петропавл қалалық соты барлығын 8 жылдан 11 жылға дейін бас бостандығынан айыру туралы үкім шығарды<BR></BR>
+            Солтүстік Қазақстан облысында заңсыз аңшылықпен айналысқан ұйымдасқан қылмыс топ сотталды, деп хабарлайды облыстық прокуратура.<BR></BR>
+            23 сәуірде ұйымдасқан қылмыс тобы құрамында заңсыз аңшылықпен айналысқандарға қатысты үкім заңды күшіне енді.<BR></BR>
+            отта бұлтартпас дәлелдер бола тұра, төрт айыпталушы жасаған қылмыстары үшін өз кінәларын мойындамай, жасаған қылмыстарына өкінбеген. Осыған қарамастан, мемлекеттік айыптаушы Петропавл қаласының 4 тұрғынын облыс орталығының маңында 53 елікті заңсыз атып, мемлекетке 68 миллион теңгеден астам шығын келтіргенін дәлелдеді", - делінген хабарламада.<BR></BR>Петропавл қалалық соты барлығын 8 жылдан 11 жылға дейін бас бостандығынан айыру туралы үкім шығарды. Олардан келтірілген материалдық шығынды өндіріліп алынады.
+        </EM>
+    </p>
+</section>
+        <section>
+            <h2>Сапалы жаңалықтарды сіздерге  берудеміз</h2>
+            <p>Келесі сабақтарды кез келген күнде бастаймыз!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Жаңалықтар. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
